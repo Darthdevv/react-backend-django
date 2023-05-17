@@ -5,4 +5,4 @@ from customers.serializers import CustomerSerializer
 def customers(request):
   data = Customer.objects.all()
   serializer = CustomerSerializer(data,many=True)
-  return JsonResponse({'customer' : serializer.data})
+  return JsonResponse({'customer' : serializer.data}) 
